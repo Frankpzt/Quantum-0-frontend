@@ -1,0 +1,66 @@
+@import "../../../assets/styles/variable.scss";
+$authItemWidth: 440px;
+$authLabelFontSize: 14px;
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+  text-align: left;
+  width: $authItemWidth;
+  .formItems {
+      width: $authItemWidth;
+  }
+  h3 {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 40px;
+      color: $primaryTextColor;
+      margin-bottom: 1px;
+  }
+  p {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+      color: $primaryLabelColor;
+      margin-bottom: 60px;
+  }
+}
+.formFooterItems {
+  text-align: right;
+  height: 20px;
+  margin-top: -18px;
+  float: right;
+}
+  .formItems {
+  width: $authItemWidth;
+  margin-top: 20px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .invalidField {
+    color: $primaryErrorColor;
+    background-color: $primaryErrorBackground;
+    font-size: $authLabelFontSize;
+    border-radius: 2px;
+    height: 40px;
+    .iconExclaimation {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 11px 8px 8px 12px;
+    }
+  }
+  .btn {
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    height: 32px;
+    width: $authItemWidth;
+    background-color: $primaryNavBackground;
+    color: $secondaryBackgroundColor;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+} 

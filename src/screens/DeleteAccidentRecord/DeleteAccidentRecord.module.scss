@@ -1,0 +1,7 @@
+@import "../../assets/styles/variable.scss";
+.deleteBtn {
+  background-color: $primaryErrorColor;
+  color: $primaryBackgroundColor;
+  padding: 1px 23px;
+  cursor: pointer;
+}

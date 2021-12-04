@@ -1,0 +1,203 @@
+@import "../../assets/styles/variable.scss";
+.container {
+    padding: 3em;
+    width: 100%;
+    .back {
+        text-decoration: none;
+        svg {
+            font-size: x-large;
+            margin-bottom: -6px;
+        }
+    }
+    .basicDetail {
+        display: flex;
+        h2 {
+            margin-left: 10px;
+        }
+    }
+    .notes {
+        color: $tertiaryTextColor;
+        font-size: 10px;
+        line-height: 12px;
+        padding-top: 11px;
+        padding-bottom: 8px;
+    }
+    .imageField {
+        width: 50%;
+        display: flex;
+        .imageDisplay {
+            width: 520px;
+            height: 254px;
+            object-fit: cover;
+        }
+        .imageList {
+            padding-left: 6px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            button {
+                border: none;
+                background: transparent;
+                padding: 0;
+                &:nth-child(3) {
+                    padding-top: 3.5px;
+                    padding-bottom: 3.5px;
+                }
+            }
+            img {
+                width: 122px;
+                height: 80px;
+                object-fit: cover;
+                opacity: 0.6;
+                cursor: pointer;
+                &.active {
+                    opacity: 1;
+                }
+            }
+            .up,
+            .down {
+                height: 2em;
+                width: 2em;
+                position: absolute;
+                color: $primaryBackgroundColor;
+                left: 40%;
+                cursor: pointer;
+            }
+            .inactive {
+                display: none;
+            }
+            .up {
+                top: 0;
+                z-index: 1;
+            }
+            .down {
+                bottom: 0;
+            }
+        }
+    }
+    .title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .basicContent {
+        width: 50%;
+        margin-left: 40px;
+
+        .flexbox {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        hr {
+            border: 1px solid #f0f0f0;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .formControl {
+            width: 23%;
+            margin-left: 10px;
+            input {
+                width: 100%;
+                margin-bottom: 8px;
+                margin-right: 11px;
+            }
+        }
+    }
+
+    .tableWrapper {
+        position: relative;
+        .tableScroll {
+            height: 120px;
+            overflow: auto;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            span {
+                width: 100%;
+                position: absolute;
+                display: block;
+                top: -20px;
+                z-index: 2;
+                height: 20px;
+            }
+        }
+    }
+    th {
+        font-size: 12px;
+        text-align: start;
+        padding-right: 5px;
+    }
+    td {
+        padding-right: 5px;
+        padding-bottom: 8px;
+    }
+    // Order history
+    .rentalHistory {
+        margin-top: 10px;
+        td,
+        th {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(8),
+            &:nth-child(9) {
+                width: 5%;
+            }
+            &:nth-child(3),
+            &:nth-child(4) {
+                width: 10%;
+            }
+            &:nth-child(5) {
+                width: 5%;
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                width: 10%;
+            }
+        }
+    }
+    // periodicCost
+    .periodicCost {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        .periodic,
+        .accident {
+            width: 49%;
+        }
+        .periodic {
+            .tableScroll {
+                height: 60px;
+            }
+            th {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    width: 10%;
+                }
+            }
+        }
+        .accident {
+            .tableScroll {
+                height: 60px;
+            }
+            th {
+                &:nth-child(1) {
+                    width: 25%;
+                }
+                &:nth-child(2) {
+                    width: 15%;
+                }
+                &:nth-child(4) {
+                    width: 15%;
+                }
+                &:nth-child(3),
+                &:nth-child(5) {
+                    width: 10%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import "../../assets/styles/variable.scss";
+$authLabelFontSize: 14px;
+$authItemWidth: 440px;
+$authItemHeight: 40px;
+.formItems {
+    width: $authItemWidth;
+  }
+.inputLabel {
+    color: $primaryLabelColor;
+    font-size: $authLabelFontSize;
+    margin: 10px 0 2px 0;
+}
+.inputField {
+    background-color: $primaryInputBackground;
+    border-radius: 2px;
+    border-color: $primaryLabelColor;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    height: $authItemHeight;
+    width: $authItemWidth;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: inset 0 0 0 $authItemHeight $primaryInputBackground;
+}
+.iconEye {
+    margin-top: 5px;;
+    border: none;
+    background-color: transparent;
+}
+.helpField {
+    height: 16px;
+    margin-top: 5px;
+    vertical-align: top;
+    .errorInfo {
+        color: $primaryErrorColor;
+        display: flex;
+        text-align: left;
+        .errorIcon {
+            margin: 1px 5px 0 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .errorMessage {
+        margin-top: 3px;
+        font-size: $authLabelFontSize;
+        justify-content: center;
+        line-height: $authLabelFontSize;
+        }
+    }
+}

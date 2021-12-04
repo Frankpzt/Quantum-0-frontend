@@ -1,0 +1,42 @@
+@import "../../../assets/styles/variable.scss";
+
+.critical,
+.important,
+.normal {
+    margin: 5px;
+    border-radius: 2px;
+    height: 20px;
+    background: $secondaryBackgroundColor;
+    display: flex;
+    justify-content: space-between;
+    .title {
+        margin-left: 5px;
+    }
+    .time {
+        color: $secondaryCalendarColor;
+    }
+}
+
+.critical {
+    border: 1px solid rgba($primaryCritical, 0.3);
+    .label {
+        border-left: 1px solid $primaryCritical;
+        opacity: 1;
+    }
+}
+
+.important {
+    border: 1px solid rgba($primaryImportant, 0.3);
+    .label {
+        border-left: 1px solid $primaryImportant;
+        opacity: 1;
+    }
+}
+
+.normal {
+    border: 1px solid rgba($primaryNormal, 0.3);
+    .label {
+        border-left: 1px solid $primaryNormal;
+        opacity: 1;
+    }
+}

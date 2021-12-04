@@ -1,0 +1,408 @@
+@import "../../assets/styles/variable.scss";
+
+
+
+.container {
+
+    position: fixed;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+
+    height: auto;
+
+    background: $primaryBackgroundColor;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+    input {
+
+        border-bottom: 1px solid;
+
+        &::placeholder {
+
+            color: $secondaryInputColor;
+
+            opacity: 60%;
+
+        }
+
+        &:focus {
+
+            outline:0px;
+
+        }
+
+    }
+
+
+    header {
+
+        background: black;
+
+        display: flex;
+
+        justify-content: space-between;
+
+
+        .title {
+
+            padding: 20px 20px 10px 20px;
+
+            color: white;
+
+        }
+
+        .closeButton {
+
+            padding: 20px 20px 40px 20px;
+
+            color: white;
+            width: 60px;
+            height: 20px;
+
+            border-radius: 0;;
+
+            &:hover {
+
+                background: $primaryCritical;
+
+            }
+
+            .closeIcon {
+
+                margin-top: 25px;
+
+            }
+
+        }
+
+    }
+
+
+    main {
+
+        padding: 0px 20px 20px 20px;
+
+        .firstRow {
+
+            display: flex;
+
+            flex-direction: column;
+
+            margin-top: 10px;
+
+            .firstRow_firstSection {
+
+                margin-top: 10px;
+
+                display: flex;
+
+                .firstRow_firstInput {
+
+                    input {
+
+                        width: 310px;
+
+                    }
+
+                }
+
+                .firstRow_secondInput {
+
+                    padding: 5px 18px 5px 5px ;
+
+                    margin-left: 18px;
+
+                    background: $secondaryButtonBackground;
+
+                    border-radius: 2px;
+
+                }
+
+            }
+
+
+            .firstRow_secondSection {
+
+                margin-top: 10px;
+
+                display: flex;
+
+                .firstRow_fourthInput {
+
+                    margin-left: 50px;
+
+                    input {
+
+                        width: 235px;
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+        .secondRow {
+
+            display: flex;
+
+            flex-direction: column;
+
+            margin-top: 10px;
+            .dateValidationMsg {
+                color: $primaryCritical;
+            }
+            .secondRow_firstSection {
+
+                margin-top: 10px;
+
+                display: flex;
+
+                .secondRow_firstInput {
+
+                    input {
+
+                        width: 210px;
+
+                    }
+
+                }
+
+                .secondRow_secondInput {
+
+                    margin-left: 20px;
+
+                    input {
+
+                        width: 210px;
+
+                    }
+
+                }
+
+            }
+
+            .secondRow_secondSection {
+
+                margin-top: 15px;
+
+                display: flex;
+
+                .secondRow_thirdInput {
+
+                    margin-left: 0;
+
+                    padding-left: 15px;
+
+                    background: $secondaryButtonBackground;
+
+                    border-radius: 2px;
+
+                    input {
+
+                        width: 210px;
+
+                    }
+
+                }
+
+                .secondRow_fourthInput {
+
+                    margin-left: 20px;
+
+                    input {
+
+                        width: 155px;
+
+                    }
+
+                }
+
+                .secondRow_fifthInput {
+
+                    margin-left: 20px;
+
+                    input {
+
+                        width: 155px;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .thirdRow {
+
+            display: flex;
+
+            flex-direction: column;
+
+            margin-top: 10px;
+
+            .thirdRow_firstInput {
+
+                margin-top: 10px;
+
+                .selectInput {
+
+                    width: 240px;
+
+                    .tag_urgent {
+
+                        margin-left: 2px;
+
+                        color: $primaryCritical;
+
+                    }
+
+                    .tag_important {
+
+                        margin-left: 2px;
+
+                        color: $primaryImportant;
+
+                    }
+
+                    .tag_normal {
+
+                        margin-left: 2px;
+
+                        color: $primaryNormal;
+
+                    }
+
+                }
+
+            }
+
+            .thirdRow_secondInput {
+
+                margin-top: 10px;
+
+                input {
+
+                    margin-top: 16px;
+
+                    width: 440px;
+
+                }
+
+            }
+
+        }
+
+        
+
+    }
+
+
+    footer {
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content:flex-end;
+
+        padding: 0px 20px 20px 20px;
+
+        margin-top: 10px;
+
+        .button_cancel {
+
+            text-transform: none;
+
+            background: $primaryInputBackground;
+
+            width: 110px;
+
+            height: 50px;
+
+            margin-top: 5px;
+
+            .button_cancel__text {
+
+                color: $primaryColor;
+
+            }
+
+        }
+
+        .button {
+
+            margin-top: 5px;
+
+            margin-left: 10px;
+
+            width: 110px;
+
+            background: $primaryColor;
+
+            text-transform: none;
+
+            &:hover {
+
+                background: $primaryColor;
+
+            }
+
+            .button_text {
+
+                padding: 8px;
+
+            }
+
+            .circularProgress {
+
+                padding: 4px;
+                color: $primaryLinkColor;
+            }
+
+        }
+
+    }
+
+    
+
+    .errorMsg {
+
+        position: absolute;
+
+        color: $primaryCritical;
+
+        margin-right: 70px;
+
+        padding: 18px 225px 18px 25px;
+
+        background: $primaryNavBackground;
+
+    }
+    
+    .errorMsg {
+        position: absolute;
+        color: $primaryCritical;
+        margin-right: 70px;
+        padding: 18px 225px 18px 25px;
+        background: $primaryNavBackground;
+    }
+    
+    .errorMsg {
+        position: absolute;
+        color: $primaryCritical;
+        margin-right: 70px;
+        padding: 18px 225px 18px 25px;
+        background: $primaryNavBackground;
+    }
+}

@@ -1,0 +1,85 @@
+@import "../../assets/styles/variable.scss";
+
+.container {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -55%);
+    background: $primaryBackgroundColor;
+    width: 600px;
+    height: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px 30px 20px;
+    h2 {
+        color: $primaryHeadingColor;
+    }
+    .errorMsg {
+        color: red;
+        font-weight: bold;
+    }
+    label {
+        font-weight: bold;
+    }
+    .closeButton {
+        width: 50px;
+        height: auto;
+        align-self: end;
+    }
+    input {
+        border: 1px solid $secondaryInputColor;
+        border-radius: 1px;
+        width: 290px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .content {
+        margin: 20px 10px 10px 20px;
+        .firstRow {
+            margin-top: 10px;
+            display: flex;
+            .firstCol {
+                input {
+                    width: 200px;
+                }
+                padding-right: 10px;
+                width: 300px;
+            }
+            .secondCol {
+                margin-left: 10px;
+                width: 500px;
+            }
+        }
+        .secondRow {
+            display: flex;
+            .description {
+                padding-bottom: 10px;
+                flex: 1;
+                .textArea {
+                    border: 1px solid $secondaryInputColor;
+                    width: 510px;
+                    height: 120px;
+                    resize: none;
+                }
+            }
+        }
+    }
+    .button {
+        margin-top: 5px;
+        width: 110px;
+        left: 200px;
+        background: $primaryColor;
+        text-transform: none;
+        &:hover {
+            background: $primaryColor;
+        }
+        .button_text {
+            padding: 8px;
+        }
+        .circularProgress {
+            padding: 4px;
+        }
+    }
+}

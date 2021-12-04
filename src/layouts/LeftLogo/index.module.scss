@@ -1,0 +1,15 @@
+@import "../../assets/styles/variable.scss";
+.left {
+    width: 35vw;
+    height: 100vh;
+    background-color: $primaryNavBackground;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        margin-top: 55px;
+        color: $primaryBackgroundColor;
+        font-size: 14px;
+    }
+}

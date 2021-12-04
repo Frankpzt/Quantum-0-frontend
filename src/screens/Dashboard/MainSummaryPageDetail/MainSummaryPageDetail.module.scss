@@ -1,0 +1,29 @@
+@import '../../../assets/styles/variable.scss';
+@import '../../../assets/styles/layout.scss';
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:100px;
+    &_box{
+        margin:45px;
+        box-shadow:0px 2px 38px -5px rgba(36, 33, 54, 0.25);
+        border-radius:16px;
+        background-color:$primaryBackgroundColor;
+        width:420px;
+        padding:30px;
+        color:$primaryColor;
+        font-size:16px;
+        text-align:left;
+        @include media{
+            width:300px;
+            margin:20px;
+        }
+        &_content{
+            width:100%;
+            text-align:center;
+            padding:30px 50px 30px 50px;
+            font-size:36px;
+        }
+    }
+}

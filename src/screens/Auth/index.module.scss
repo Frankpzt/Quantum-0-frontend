@@ -1,0 +1,25 @@
+@import "../../assets/styles/variable.scss";
+.container {
+    background-color: $secondaryBackgroundColor;
+    height: 100vh;
+    .sideLogo {
+        position: fixed;
+    }
+    .authField {
+        display: flex;
+        flex-direction: column;
+        float: right;
+        width: 65%;
+        .navField {
+            background-color: $primaryBackgroundColor;
+            width: 100%;
+        }
+        .authForm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 780px;
+            background-color: $secondaryBackgroundColor;
+        }
+    }
+}

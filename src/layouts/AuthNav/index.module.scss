@@ -1,0 +1,30 @@
+@import "../../assets/styles/variable.scss";
+$authItemWidth: 440px;
+.AuthenNav {
+    background-color: $primaryBackgroundColor;
+    display: flex;
+    justify-content: center;
+    ul {
+        list-style: none;
+        width: $authItemWidth;
+        margin: 40px 0 18px 0;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        align-items: baseline;
+    }
+    a {
+        font-style: normal;
+        color: $primaryLinkColor;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    a.active {
+        color: $primaryFontColor;
+        font-size: 30px;
+        background-image: linear-gradient($secondaryInputColor, $secondaryInputColor);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+    }
+}

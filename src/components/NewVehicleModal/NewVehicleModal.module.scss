@@ -1,0 +1,40 @@
+@import "../../assets/styles/variable.scss";
+.modalContainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: $primaryBackgroundColor;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .formControl {
+        width: 50%;
+        margin-bottom: 5px;
+        input {
+            width: 90%;
+        }
+    }
+
+    .box {
+        text-align: center;
+        .button {
+            margin-top: 10px;
+            width: 110px;
+            height: 40px;
+            background: $primaryColor;
+            text-transform: none;
+            &:hover {
+                background: $primaryColor;
+            }
+        }
+    }
+}

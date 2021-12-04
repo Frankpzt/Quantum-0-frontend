@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true, // Allows for the use of predefined global variables for browsers (document, window, etc.)
+    "jest": true, // Allows for the use of predefined global variables for Jest (describe, test, etc.)
+    "node": true // Allows for the use of predefined global variables for Node.js (module, process, etc.)
+  },
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "jsx-a11y",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".d.ts"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "off",
+    "no-param-reassign": "off",
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "semi": 0,
+    "no-use-before-define": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"] }],
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 4,
+        "endOfLine": "auto"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never",
+        "d.ts": "never"
+      }
+    ]
+  }
+}

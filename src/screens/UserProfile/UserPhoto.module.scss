@@ -1,0 +1,35 @@
+@import "../../assets/styles/variable.scss";
+.userPhoto {
+    position: relative;
+    height: 90%;
+    width: 50%;
+    margin-left: 5%;
+    background-color: $secondaryBackgroundColor;
+    .photoDisplayBox {
+        color: $secondaryBackgroundColor;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        background-color: $primaryBackgroundColor;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            border-radius: 100%;
+        }
+    }
+    .userNameContainer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        text-align: center;
+        .uploadPhotoButton {
+            margin-top: 30%;
+            background-color: $primaryBackgroundColor;
+        }
+    }
+}

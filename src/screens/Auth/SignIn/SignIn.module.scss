@@ -1,0 +1,78 @@
+@import "../../../assets/styles/variable.scss";
+$authLabelFontSize: 14px;
+$authItemWidth: 440px;
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+  text-align: left;
+  width: $authItemWidth;
+  height: fit-content;
+  .formItems {
+      width: $authItemWidth;
+  }
+  h3 {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 40px;
+      color: $primaryTextColor;
+      margin-bottom: 1px;
+  }
+  p {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+      color: $primaryLabelColor;
+      margin-bottom: 60px;
+  }
+}
+.formFooterItems {
+  text-align: right;
+  height: 40px;
+  margin-top: -16px;
+  float: right;
+}
+.formItems {
+  width: $authItemWidth;
+  margin-top: 55px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .invalidField {
+    color: $primaryErrorColor;
+    background-color: $primaryErrorBackground;
+    font-size: $authLabelFontSize;
+    border-radius: 2px;
+    height: 40px;
+    .iconExclaimation {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 11px 8px 8px 12px;
+    }
+  }
+  .btn {
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    height: 32px;
+    width: $authItemWidth;
+    background-color: $primaryNavBackground;
+    color: $secondaryBackgroundColor;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .saveInfo {
+    text-align: right;
+    color: $primaryLinkColor;
+    font-size: $authLabelFontSize;
+    margin: 5px 2px 0 0;
+    .saveInfoCheckbox {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px 3px 0;
+    }
+  }    
+}  
